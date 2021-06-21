@@ -141,13 +141,28 @@ body{
 }
 
 /* HEADER */
+.bg-video{
+	width: 100%;
+	max-height: 100vh;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+.overlay{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
 header{
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(../slide-01.jpg);
-    background-size: cover;
     font-weight: 700;
 }
 .navbar{
     padding: 10px 0;
+}
+.navbar-bg{
+	background-color: rgba(187, 182, 182, 0.3);
 }
 header a{
     color: white;
@@ -158,9 +173,11 @@ header a{
 .nav-menu a{
     margin-right: 25px;
 }
+.nav-menu a:hover{
+	color: var(--primary);
+}
 .hero{
     color: white;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
     padding: 200px 0;
 }
 .hero h2{
@@ -171,6 +188,7 @@ header a{
     font-size: 50px;
     margin-bottom: 10px;
 }
+
 
 /* main */
 .section-header{
